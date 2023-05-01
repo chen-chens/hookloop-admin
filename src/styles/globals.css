@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  #__next {
+    @apply h-full w-full;
+  }
+  html,
+  body {
+    @apply h-full w-full bg-[#f5f5f5];
+  }
+  blockquote,
+  dl,
+  dd,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  figure,
+  p,
+  pre {
+    margin: 0;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
