@@ -6,9 +6,9 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Home Page</title>
+        <title>HookLoop Admin</title>
       </Head>
-      <Layout />
+      {/* <Layout /> */}
     </>
   );
 };

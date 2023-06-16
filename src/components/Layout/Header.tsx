@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Layout, Space, Typography, Avatar } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined } from "@ant-design/icons";
 import Login from "../Login";
+import { IHeader } from "./type";
 
 const { Header } = Layout;
 const { Title } = Typography;
@@ -35,9 +36,9 @@ const MyHeader: React.FC<IHeader> = (props) => {
           HookLoop
         </Title>
       </Space>
-      <Space className="flex-1 flex justify-end" align="center">
+      {/* <Space className="flex-1 flex justify-end" align="center">
         <Avatar size="large" className="cursor-pointer" icon={<UserOutlined />} onClick={() => set_s_showLogin(true)} />
-      </Space>
+      </Space> */}
 
       <Login open={s_showLogin} close={closeLogin} />
     </Header>
